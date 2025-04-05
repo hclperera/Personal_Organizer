@@ -477,7 +477,9 @@
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QTableWidget{
+color:rgb(255, 213, 215);
+}</string>
        </property>
        <property name="editTriggers">
         <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
