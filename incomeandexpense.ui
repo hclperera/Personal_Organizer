@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IncomeAndExpense</class>
+ <widget class="QDialog" name="IncomeAndExpense">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Income And Expense</string>
+  </property>
+  <widget class="QWidget" name="Fback" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>640</width>
+     <height>720</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>640</width>
+     <height>720</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(36, 36, 36);
+}</string>
+   </property>
+   <widget class="QWidget" name="Fback1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>611</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(45, 45, 45);
+}</string>
+    </property>
+    <widget class="QWidget" name="Fback2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>571</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: rgb(55, 55, 55);
+	border-radius:20px;
+}</string>
+     </property>
+     <widget class="QWidget" name="Fback3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>511</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(65, 65, 65);
+	border-radius:15px;
+}</string>
+      </property>
+      <widget class="QWidget" name="btnBack" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>471</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	
+	background-color:rgb(88, 88, 88);
+	border-radius:10px;
+}</string>
+       </property>
+       <widget class="QPushButton" name="btnExpenseTracker">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>260</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(255, 131, 133);
+	border-radius:25px;
+	border-color: rgb(53, 69, 93);
+	
+	color: rgb(0, 0, 0);
+}</string>
+        </property>
+        <property name="text">
+         <string>Expense Tracker</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnIncomeTracker">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>160</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(255, 131, 133);
+	border-radius:25px;
+	border-color: rgb(53, 69, 93);
+	
+	color: rgb(0, 0, 0);
+}</string>
+        </property>
+        <property name="text">
+         <string>Income Tracker</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="txtDashboard">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>431</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Poor Richard</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color:rgb(255, 213, 215);
+}</string>
+        </property>
+        <property name="text">
+         <string>Income And Expense Tracker</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnBack_2">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>360</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(152, 96, 100);
+	border-radius:25px;
+	border-color: rgb(53, 69, 93);
+	
+	color: gold;
+}</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
