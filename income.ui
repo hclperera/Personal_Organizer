@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Income</class>
+ <widget class="QDialog" name="Income">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Income</string>
+  </property>
+  <widget class="QWidget" name="Fback" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(36, 36, 36);
+}</string>
+   </property>
+   <widget class="QWidget" name="Fback1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>1221</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(45, 45, 45);
+}</string>
+    </property>
+    <widget class="QWidget" name="Fback2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>1171</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: rgb(55, 55, 55);
+	border-radius:20px;
+}</string>
+     </property>
+     <widget class="QWidget" name="Fback3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>1121</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(65, 65, 65);
+	border-radius:15px;
+}</string>
+      </property>
+      <widget class="QWidget" name="btnBack" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>481</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	
+	background-color:rgb(88, 88, 88);
+	border-radius:10px;
+}</string>
+       </property>
+       <widget class="QComboBox" name="source_Income">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Cascadia Code</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox{
+	background-color:rgb(255, 131, 133);
+	border-radius:20px;
+	padding-left:10px;
+	padding-right:10px;
+	color: black;
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Scholarships</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Allowance</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Job</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>StudentAid</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="btnAdd">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>320</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(255, 213, 215);
+	border-radius:25px;
+	border-color: rgb(53, 69, 93);
+	
+	color: rgb(0, 0, 0);
+}</string>
+        </property>
+        <property name="text">
+         <string>Add Income</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_date">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>240</y>
+          <width>161</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color:rgb(255, 213, 215);
+}</string>
+        </property>
+        <property name="text">
+         <string>Year/Month/Date</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_source">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>140</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color:rgb(255, 213, 215);
+}</string>
+        </property>
+        <property name="text">
+         <string>Source</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_amount">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>340</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color:rgb(255, 213, 215);
+}</string>
+        </property>
+        <property name="text">
+         <string>Amount</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnClear">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>240</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(255, 213, 215);
+	border-radius:25px;
+	border-color: rgb(53, 69, 93);
+	
+	color: rgb(0, 0, 0);
+}</string>
+        </property>
+        <property name="text">
+         <string>Clear All</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnSelected">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>160</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(255, 213, 215);
+	border-radius:25px;
+	border-color: rgb(53, 69, 93);
+	
+	color: rgb(0, 0, 0);
+}</string>
+        </property>
+        <property name="text">
+         <string>Clear Selected</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="txtDashboard">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>10</y>
+          <width>381</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Poor Richard</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color:rgb(255, 213, 215);
+}</string>
+        </property>
+        <property name="text">
+         <string>Income Tracker</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnBack_2">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>400</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(152, 96, 100);
+	border-radius:25px;
+	border-color: rgb(53, 69, 93);
+	
+	color: gold;
+}</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="amountIncome">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>370</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Cascadia Code</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QDoubleSpinBox{
+	background-color:rgb(255, 131, 133);
+	border-radius:20px;
+	padding-left:10px;
+	padding-right:10px;
+	color:black;
+}</string>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+        </property>
+        <property name="decimals">
+         <number>2</number>
+        </property>
+        <property name="maximum">
+         <double>1000000.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateEdit">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>270</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Cascadia Code</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QDateEdit{
+	background-color:rgb(255, 131, 133);
+	border-radius:20px;
+	padding-left:10px;
+	padding-right:10px;
+	color:black;
+}</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy/MM/dd</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tableBack" native="true">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>30</y>
+         <width>561</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	
+	background-color:rgb(88, 88, 88);
+	border-radius:10px;
+}</string>
+       </property>
+       <widget class="QTableWidget" name="tableIncome">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>511</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Cascadia Code</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Rockwell</family>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Date</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Rockwell</family>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Source</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Rockwell</family>
+          </font>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Amount</string>
+         </property>
+         <property name="font">
+          <font>
+           <family>Rockwell</family>
+          </font>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <zorder>tableBack</zorder>
+      <zorder>btnBack</zorder>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
