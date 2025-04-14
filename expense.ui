@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>Expense Tracker</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+color:rgb(255, 213, 215);
+}</string>
+  </property>
   <widget class="QWidget" name="Fback" native="true">
    <property name="geometry">
     <rect>
@@ -490,7 +495,9 @@
          <bool>false</bool>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">QTableWidget{
+color:rgb(255, 213, 215);
+}</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::Shape::StyledPanel</enum>

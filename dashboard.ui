@@ -25,6 +25,7 @@
   <property name="styleSheet">
    <string notr="true">QDialog{
 	background-color: rgb(36, 36, 36);
+	color:rgb(255, 213, 215);
 }</string>
   </property>
   <widget class="QWidget" name="back1" native="true">
