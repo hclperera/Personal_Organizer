@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>Academic</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	color:rgb(255, 213, 215);
+}</string>
+  </property>
   <widget class="QWidget" name="Fback" native="true">
    <property name="geometry">
     <rect>

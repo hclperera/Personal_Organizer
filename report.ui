@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	color:rgb(255, 213, 215);
+}</string>
+  </property>
   <widget class="QWidget" name="Fback" native="true">
    <property name="geometry">
     <rect>
@@ -393,6 +398,11 @@ background-color:rgb(88, 88, 88);
          <height>461</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget{
+color:rgb(255, 213, 215);
+}</string>
+       </property>
        <property name="editTriggers">
         <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
        </property>
@@ -415,6 +425,11 @@ background-color:rgb(88, 88, 88);
          <width>251</width>
          <height>461</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget{
+color:rgb(255, 213, 215);
+}</string>
        </property>
        <property name="editTriggers">
         <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>

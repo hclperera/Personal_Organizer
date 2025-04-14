@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>Income</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	color:rgb(255, 213, 215);
+}</string>
+  </property>
   <widget class="QWidget" name="Fback" native="true">
    <property name="geometry">
     <rect>
@@ -431,7 +436,9 @@
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">QTableWidget{
+color:rgb(255, 213, 215);
+}</string>
         </property>
         <property name="editTriggers">
          <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
