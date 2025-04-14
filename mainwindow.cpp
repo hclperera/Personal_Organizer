@@ -27,6 +27,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btnRegister_clicked()
 {
+    //when register button is clicked hides this window and show the newWindow
     this->hide();
     if (!newWindow) {
         newWindow = new NewWindow(this);
