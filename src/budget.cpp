@@ -14,6 +14,7 @@ Budget::Budget(int userId,QWidget *parent)
     , ui(new Ui::Budget),userId(userId)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_DeleteOnClose);
     ui->month->setDate(QDate::currentDate());
     showData();
 }

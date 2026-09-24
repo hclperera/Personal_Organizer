@@ -53,27 +53,31 @@ void Dashboard::checkUpcoming(){
 
         QString datetimeString = date + " "+ time;
         QDateTime assignmentTime= QDateTime::fromString(datetimeString, "yyyy-MM-dd HH:mm:ss");
+        
+        // Fallback for dates saved in the UI display format
+        if (!assignmentTime.isValid()) {
+            assignmentTime = QDateTime::fromString(datetimeString, "yyyy/MM/dd hh:mm AP");
+        }
 
         QDateTime currentDateTime = QDateTime::currentDateTime();
 
-         qint64 secondsDiff = currentDateTime.secsTo(assignmentTime);
+        qint64 secondsDiff = currentDateTime.secsTo(assignmentTime);
 
         if (secondsDiff >= 0 && secondsDiff < 7200) {
             QMessageBox::information(this, "Assignment Reminder",
                                      QString("Reminder: You have an assignment '%1' due on %2 at %3.")
                                          .arg(subject, date, time));
-            return;
+        }
     }
-}
 }
 void Dashboard::on_btnLogout_clicked()
 {
-    MainWindow *mainWindow;
     this->close();
 
-
-     mainWindow=new MainWindow(this);
-     mainWindow->show();
+    MainWindow *mainWindow = qobject_cast<MainWindow*>(parent());
+    if (mainWindow) {
+        mainWindow->show();
+    }
 }
 
 

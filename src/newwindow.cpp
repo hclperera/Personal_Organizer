@@ -8,6 +8,7 @@
 #include <QLabel>
 #include <QMessageBox>
 #include <QString>
+#include <QCryptographicHash>
 
 
 
@@ -60,10 +61,13 @@ void NewWindow::on_pushButton_clicked()
         return;
     }
 
+    QByteArray hash = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256);
+    QString hashedPassword = QString(hash.toHex());
+
     QSqlQuery query(db);
     query.prepare("INSERT INTO users(username,password) VALUES (:username,:password)");
     query.bindValue(":username", username);
-    query.bindValue(":password", password);
+    query.bindValue(":password", hashedPassword);
 
     if (!query.exec()){
         qDebug()<<"Error : "<<query.lastError().text();

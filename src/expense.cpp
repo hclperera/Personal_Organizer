@@ -13,6 +13,7 @@ Expense::Expense(int userId,QWidget *parent)
     , ui(new Ui::Expense),userId(userId)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_DeleteOnClose);
      ui->dateEdit->setDate(QDate::currentDate());
     showData();
 }

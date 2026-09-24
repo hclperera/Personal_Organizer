@@ -36,7 +36,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QWidget{
-	background-color: rgb(36, 36, 36);
+	background-color: rgb(15, 48, 64);
 }</string>
    </property>
    <widget class="QWidget" name="Fback1" native="true">
@@ -116,11 +116,11 @@
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
 	border-radius:25px;
 	border-color: rgb(53, 69, 93);
 	
-	color: rgb(0, 0, 0);
+	color: white;
 }</string>
         </property>
         <property name="text">
@@ -144,11 +144,11 @@
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
 	border-radius:25px;
 	border-color: rgb(53, 69, 93);
 	
-	color: rgb(0, 0, 0);
+	color: white;
 }</string>
         </property>
         <property name="text">
@@ -172,7 +172,7 @@
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel{
-	color:rgb(255, 213, 215);
+	color:white;
 }</string>
         </property>
         <property name="text">
@@ -196,11 +196,10 @@
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton{
-	background-color:rgb(152, 96, 100);
+	background-color:rgb(217, 155, 127);
 	border-radius:25px;
 	border-color: rgb(53, 69, 93);
-	
-	color: gold;
+	color: white;
 }</string>
         </property>
         <property name="text">

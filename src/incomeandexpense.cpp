@@ -9,6 +9,7 @@ IncomeAndExpense::IncomeAndExpense(int userId,QWidget *parent)
     , ui(new Ui::IncomeAndExpense),userId(userId)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_DeleteOnClose);
 }
 
 IncomeAndExpense::~IncomeAndExpense()
