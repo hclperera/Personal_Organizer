@@ -29,7 +29,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QWidget{
-	background-color: rgb(36, 36, 36);
+	background-color: rgb(15, 48, 64);
 }</string>
    </property>
    <widget class="QWidget" name="Fback1" native="true">
