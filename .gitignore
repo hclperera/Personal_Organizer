@@ -1,0 +1,45 @@
+# C++ objects and libs
+*.slo
+*.lo
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Qt Creator settings
+*.pro.user
+*.pro.user.*
+*.pro.shared
+
+# Qt specific
+ui_*.h
+moc_*.h
+moc_*.cpp
+qrc_*.cpp
+Makefile*
+*build-*
+build/
+*.qm
+*.prl
+
+# Databases
+*.db
+*.sqlite
+
+# IDEs / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary & Autosave files
+*~
+*.autosave
+*.autosave.*

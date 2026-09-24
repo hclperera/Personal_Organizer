@@ -29,7 +29,7 @@ color:rgb(255, 213, 215);
    </property>
    <property name="styleSheet">
     <string notr="true">QWidget{
-	background-color: rgb(36, 36, 36);
+	background-color: rgb(15, 48, 64);
 }</string>
    </property>
    <widget class="QWidget" name="Fback1" native="true">
@@ -109,11 +109,11 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QLineEdit{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
 	border-radius:20px;
 	padding-left:10px;
 	padding-right:10px;
-	color:black;
+	color: white;
 }</string>
         </property>
         <property name="text">
@@ -139,11 +139,11 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QComboBox{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
 	border-radius:20px;
 	padding-left:10px;
 	padding-right:10px;
-	color: black;
+	color: white;
 }</string>
         </property>
         <item>
@@ -193,11 +193,10 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton{
-	background-color:rgb(255, 213, 215);
+	background-color:rgb(165, 111, 99);
 	border-radius:25px;
 	border-color: rgb(53, 69, 93);
-	
-	color: rgb(0, 0, 0);
+	color: white;
 }</string>
         </property>
         <property name="text">
@@ -208,7 +207,7 @@ color:rgb(255, 213, 215);
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>210</y>
+          <y>220</y>
           <width>161</width>
           <height>20</height>
          </rect>
@@ -220,7 +219,7 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel{
-	color:rgb(255, 213, 215);
+	color:white;
 }</string>
         </property>
         <property name="text">
@@ -243,7 +242,7 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel{
-	color:rgb(255, 213, 215);
+	color:white;
 }</string>
         </property>
         <property name="text">
@@ -266,7 +265,7 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel{
-	color:rgb(255, 213, 215);
+	color:white;
 }</string>
         </property>
         <property name="text">
@@ -289,7 +288,7 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel{
-	color:rgb(255, 213, 215);
+	color:white;
 }</string>
         </property>
         <property name="text">
@@ -312,11 +311,10 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton{
-	background-color:rgb(255, 213, 215);
+	background-color:rgb(165, 111, 99);
 	border-radius:25px;
 	border-color: rgb(53, 69, 93);
-	
-	color: rgb(0, 0, 0);
+	color: white;
 }</string>
         </property>
         <property name="text">
@@ -339,11 +337,10 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton{
-	background-color:rgb(255, 213, 215);
+	background-color:rgb(165, 111, 99);
 	border-radius:25px;
 	border-color: rgb(53, 69, 93);
-	
-	color: rgb(0, 0, 0);
+	color: white;
 }</string>
         </property>
         <property name="text">
@@ -367,7 +364,7 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel{
-	color:rgb(255, 213, 215);
+	color:white;
 }</string>
         </property>
         <property name="text">
@@ -391,11 +388,9 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton{
-	background-color:rgb(152, 96, 100);
+	background-color:rgb(217, 155, 127);
 	border-radius:25px;
-	border-color: rgb(53, 69, 93);
-	
-	color: gold;
+	color: white;
 }</string>
         </property>
         <property name="text">
@@ -413,11 +408,11 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QDoubleSpinBox{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
 	border-radius:20px;
 	padding-left:10px;
 	padding-right:10px;
-	color:black;
+	color: white;
 }</string>
         </property>
         <property name="buttonSymbols">
@@ -443,11 +438,11 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QDateEdit{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
 	border-radius:20px;
 	padding-left:10px;
 	padding-right:10px;
-	color:black;
+	color: white;
 }</string>
         </property>
         <property name="readOnly">
@@ -496,7 +491,7 @@ color:rgb(255, 213, 215);
         </property>
         <property name="styleSheet">
          <string notr="true">QTableWidget{
-color:rgb(255, 213, 215);
+color:rgb(255, 255, 255);
 }</string>
         </property>
         <property name="frameShape">

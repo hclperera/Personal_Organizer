@@ -51,6 +51,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 
 RESOURCES += \
-    1.qrc
-
+    res\1.qrc  \
+    res\bg1.qrc
+    
 DISTFILES +=

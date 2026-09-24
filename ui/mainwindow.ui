@@ -66,8 +66,8 @@
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel{
-	background-color: rgb(88, 88, 88);
-	color:rgb(255, 213, 215);
+	color:white;
+	background-color:rgb(88, 88, 88);
 }</string>
      </property>
      <property name="text">
@@ -90,7 +90,7 @@
      </property>
      <property name="styleSheet">
       <string notr="true">QLineEdit{
-	background-color:rgb(255, 213, 215);
+	background-color:white;
 	border-radius:10px;
 	border-color: rgb(53, 69, 93);
 	padding-left:10px;
@@ -121,8 +121,8 @@
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel{
-	background-color: rgb(88, 88, 88);
-	color:rgb(255, 213, 215);
+	color:white;
+	background-color:rgb(88, 88, 88);
 }</string>
      </property>
      <property name="text">
@@ -162,7 +162,7 @@
      </property>
      <property name="styleSheet">
       <string notr="true">QLineEdit{
-	background-color:rgb(255, 213, 215);
+	background-color:white;
 	border-radius:10px;
 	border-color: rgb(53, 69, 93);
 	padding-left:10px;
@@ -217,7 +217,7 @@
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
 	border-radius:10px;
 	
 	color: rgb(255, 255, 255);
@@ -293,7 +293,7 @@ background-color: rgb(65, 65, 65);
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
 	border-radius:10px;
 	color: rgb(255, 255, 255);
 }</string>
@@ -320,8 +320,7 @@ background-color: rgb(65, 65, 65);
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{
-	background-color:rgb(88, 88, 88);
-	color:rgb(255, 213, 215);
+	color:white;
 }</string>
        </property>
        <property name="text">
@@ -391,7 +390,7 @@ background-color: rgb(55, 55, 55);
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel{
-	color:rgb(255, 213, 215);
+	color:white;
 }</string>
      </property>
      <property name="text">

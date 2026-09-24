@@ -39,7 +39,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QWidget{
-	background-color: rgb(36, 36, 36);
+	background-color: rgb(15, 48, 64);
 }</string>
    </property>
    <widget class="QWidget" name="back2" native="true">
@@ -106,9 +106,9 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-	background-color:rgb(255, 131, 133);
-	border-radius:25px;	
-	color:black;
+	background-color:rgb(165, 111, 99);
+	color: white;
+	border-radius:25px;
 }</string>
        </property>
        <property name="text">
@@ -132,9 +132,9 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
+	color: white;
 	border-radius:25px;
-	color:black;
 }</string>
        </property>
        <property name="text">
@@ -158,10 +158,9 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-	background-color:rgb(152, 96, 100);
 	border-radius:25px;
-	
-	color:gold;
+	background-color:rgb(217, 155, 127);
+	color: white;
 }</string>
        </property>
        <property name="text">
@@ -185,9 +184,9 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
+	color: white;
 	border-radius:25px;
-	color:black;
 }</string>
        </property>
        <property name="text">
@@ -211,9 +210,9 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-	background-color:rgb(255, 131, 133);
+	background-color:rgb(165, 111, 99);
+	color: white;
 	border-radius:25px;
-	color:black;
 }</string>
        </property>
        <property name="text">
@@ -234,7 +233,6 @@
        <string notr="true">QWidget{
 	background-color: rgb(65, 65, 65);
 	border-radius:20px;
-	
 	border-image: url(:/123/dash - Copy.jpg);
 }</string>
       </property>
@@ -256,7 +254,7 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel{
-	color:rgb(255, 213, 215);
+	color:white;
 }</string>
       </property>
       <property name="text">
