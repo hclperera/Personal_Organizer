@@ -17,7 +17,7 @@ A robust desktop application built with C++ and the Qt framework. This applicati
 ![Dashboard Placeholder](screenshots/dashboard.png)
 
 ### Income & Expense Tracker
-![Income_Tracker Placeholder](screenshots/Income_Tracker.png)
+![Income_Tracker Placeholder](screenshots/Income_Tracker_1.png)
 
 ### Expense Tracker
 ![Expense_Tracker Placeholder](screenshots/Expense_Tracker.png)
