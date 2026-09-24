@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/123">
+        <file>res\login - Copy.jpg</file>
+        <file>res\dash - Copy.jpg</file>
+    </qresource>
+</RCC>

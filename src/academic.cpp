@@ -2,6 +2,7 @@
 #include "ui_academic.h"
 #include "dashboard.h"
 #include <QDate>
+#include <QTime>
 #include <QString>
 #include <QSqlQuery>
 #include <QSqlError>
@@ -13,6 +14,7 @@ Academic::Academic(int userId,QWidget *parent)
     , ui(new Ui::Academic),userId(userId)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_DeleteOnClose);
     showData();
 }
 
@@ -26,8 +28,8 @@ void Academic::insertData()
     QSqlQuery query(db);
     QString type=ui->type->currentText();
     QString subject=ui->subjectCombo->currentText();
-    QString date=ui->dateEdit->text();
-    QString time=ui->timeEdit->text();
+    QString date=ui->dateEdit->date().toString("yyyy-MM-dd");
+    QString time=ui->timeEdit->time().toString("HH:mm:ss");
 
     QSqlQuery checkquery(db);
     checkquery.prepare("SELECT id FROM academic WHERE uid=:uid AND subject=:subject AND type=:type "

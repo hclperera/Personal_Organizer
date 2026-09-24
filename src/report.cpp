@@ -12,6 +12,7 @@ Report::Report(int userId,QWidget *parent)
     , ui(new Ui::Report),userId(userId)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_DeleteOnClose);
     ui->dateEdit->setDisplayFormat("yyyy-MM");
     ui->dateEdit->setDate(QDate::currentDate());
 }
@@ -71,7 +72,7 @@ void Report::EXshowData(QString my){
 }
 void Report::displayMonthlyReport() {
 
-    QString INmonthYear = ui->dateEdit->date().toString("yyyy/MM");
+    QString INmonthYear = ui->dateEdit->date().toString("yyyy-MM");
     QString EXmonthYear = ui->dateEdit->date().toString("yyyy-MM");
     qDebug()<<INmonthYear;
     qDebug()<<EXmonthYear;

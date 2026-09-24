@@ -7,6 +7,7 @@
 #include <QDebug>
 #include <QMessageBox>
 #include <QString>
+#include <QCryptographicHash>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -39,10 +40,13 @@ void MainWindow::on_btnRegister_clicked()
 int MainWindow::loginOK(const QString &username,const QString &password)
 {
 
+    QByteArray hash = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256);
+    QString hashedPassword = QString(hash.toHex());
+
     QSqlQuery query(db);
     query.prepare("SELECT id FROM users WHERE username = :username AND password = :password");
     query.bindValue(":username", username);
-    query.bindValue(":password", password);
+    query.bindValue(":password", hashedPassword);
 
     if (query.exec() && query.next()) {
         int userId = query.value(0).toInt();
@@ -71,6 +75,9 @@ void MainWindow::on_btnLogin_clicked()
 
         this->close();
 
+        if (dashboard) {
+            delete dashboard;
+        }
         dashboard = new Dashboard(userId,this);
         dashboard->show();
 

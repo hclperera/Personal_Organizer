@@ -13,6 +13,7 @@ Income::Income(int userId,QWidget *parent)
     , ui(new Ui::Income),userId(userId)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_DeleteOnClose);
     ui->dateEdit->setDate(QDate::currentDate());
     showData();
 }
@@ -36,7 +37,7 @@ void Income::insertData()
     QSqlQuery query(db);
     QString source=ui->source_Income->currentText();
     double amount=ui->amountIncome->value();
-    QString date=ui->dateEdit->text();
+    QString date=ui->dateEdit->date().toString("yyyy-MM-dd");
 
     if (amount <= 0) {
         QMessageBox::warning(this, "Error", "Amount must be a positive number.");
